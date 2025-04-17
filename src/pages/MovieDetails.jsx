@@ -9,7 +9,7 @@ const MovieDetails = () => {
 
   useEffect(() => {
     async function getMovie() {
-      let response = await axios.get('http://www.omdbapi.com/?apikey=176ab0a9&i=' + imdbID);
+      let response = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&i=' + imdbID);
       setMovie(response.data);
     }
     getMovie();

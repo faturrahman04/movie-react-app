@@ -7,7 +7,7 @@ const InputSearch = (props) => {
   const setMovies = useMoviesStore((state) => state.setMovies);
   const setLoadingMovies = useMoviesStore((state) => state.setLoadingMovies);
 
-  const API_KEY = `http://www.omdbapi.com/?apikey=176ab0a9&s=${inputMovies}`
+  const API_KEY = `https://www.omdbapi.com/?apikey=176ab0a9&s=${inputMovies}`
   async function handleMovies() {
     try {
       setLoadingMovies(true)
