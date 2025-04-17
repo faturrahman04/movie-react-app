@@ -12,7 +12,7 @@ export const useRecommendedMovies = () => {
         setLoadingRecommended(true)
         const theGodFather = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=the godfather');
         const tgf = await theGodFather.data;
-        const squidGame = await axios.get('http://www.omdbapi.com/?apikey=176ab0a9&t=squid game');
+        const squidGame = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=squid game');
         const sq = await squidGame.data;
         const boboiboy = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=boboiboy');
         const bb = await boboiboy.data;
