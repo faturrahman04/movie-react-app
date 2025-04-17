@@ -14,8 +14,6 @@ export const useRecommendedMovies = () => {
         const tgf = await theGodFather.data;
         const squidGame = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=squid game');
         const sq = await squidGame.data;
-        const karatekid = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=karate kid');
-        const kk = await karatekid.data;
         const harryPotter = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=harry potter');
         const hp = await harryPotter.data;
         const oppenheimer = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=oppenheimer');
@@ -30,7 +28,7 @@ export const useRecommendedMovies = () => {
         const sl = await silo.data;
         const sweetHome = await axios.get('https://www.omdbapi.com/?apikey=176ab0a9&t=sweet home');
         const sh = await sweetHome.data;
-        setRecommendedMovies([...recommendedMovies, tgf, sq, kk, hp, opHei, is, tdk, bm, sl, sh]);
+        setRecommendedMovies([...recommendedMovies, tgf, sq, hp, opHei, is, tdk, bm, sl, sh]);
       } catch (err) {
         console.error(err)
       } finally {
